@@ -1,0 +1,32 @@
+### Create a new shop ###
+POST http://localhost:5000/shops
+Content-Type: application/json
+
+{
+  "city": "New York",
+  "street": "Broadway",
+  "name": "New Shop",
+  "numberOfEmployees": 0,
+  "hasWebsite": false
+}
+
+### Get a list of all shops ###
+GET http://localhost:5000/shops
+
+### Get a shop by ID ###
+GET http://localhost:5000/shops/1
+
+### Update a shop by ID ###
+PUT http://localhost:5000/shops/1
+Content-Type: application/json
+
+{
+  "city": "New York",
+  "street": "Broadway",
+  "name": "Updated Shop",
+  "numberOfEmployees": 5,
+  "hasWebsite": true
+}
+
+### Delete a shop by ID ###
+DELETE http://localhost:5000/shops/1
